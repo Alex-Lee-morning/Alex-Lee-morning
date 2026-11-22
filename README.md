@@ -8,7 +8,7 @@
 
 <br>
 
-`sEMG` · `HRI` · `BCI` · `脑机接口`
+`sEMG` · `HRI` · `BCI`
 
 </div>
 
