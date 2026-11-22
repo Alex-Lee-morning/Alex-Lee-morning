@@ -37,6 +37,12 @@
 
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Alex-Lee-morning/Alex-Lee-morning/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Alex-Lee-morning/Alex-Lee-morning/output/github-contribution-grid-snake.svg" />
+  <img alt="Contribution graph snake" src="https://raw.githubusercontent.com/Alex-Lee-morning/Alex-Lee-morning/output/github-contribution-grid-snake.svg" />
+</picture>
+
 <sub>ZJU-UIUC · sEMG · HRI · BCI</sub>
 
 </div>
