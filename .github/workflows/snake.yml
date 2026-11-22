@@ -23,6 +23,28 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      - name: count commits in the current year
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          YEAR=$(date -u +%Y)
+          QUERY=$(cat <<EOF
+          query {
+            user(login: "${{ github.repository_owner }}") {
+              contributionsCollection(from: "${YEAR}-01-01T00:00:00Z", to: "${YEAR}-12-31T23:59:59Z") {
+                totalCommitContributions
+              }
+            }
+          }
+          EOF
+          )
+          COUNT=$(gh api graphql -f query="$QUERY" --jq '.data.user.contributionsCollection.totalCommitContributions')
+          case "$COUNT" in
+            ''|*[!0-9]*) echo "unexpected commit count: $COUNT" >&2; exit 1 ;;
+          esac
+          mkdir -p dist
+          printf '{"year":%s,"commits":%s}\n' "$YEAR" "$COUNT" > dist/commits-2026.json
+
       - name: publish snake to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:

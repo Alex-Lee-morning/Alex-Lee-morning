@@ -29,9 +29,7 @@
 
 <div align="center">
 
-[![Commits in 2026](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub-contributions-api.jogruber.de%2Fv4%2FAlex-Lee-morning%3Fy%3D2026&query=%24.total%5B%272026%27%5D&label=2026%20contributions&color=1B6CA8)](https://github.com/Alex-Lee-morning)
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Alex-Lee-morning&show_icons=true&hide=commits&theme=transparent&hide_border=true&title_color=0B1F3A&icon_color=1B6CA8&text_color=334155&rank_icon=github" alt="GitHub stats"/>
+[![Commits in 2026](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FAlex-Lee-morning%2FAlex-Lee-morning%2Foutput%2Fcommits-2026.json&query=%24.commits&label=Commits%20in%202026&color=1B6CA8)](https://github.com/Alex-Lee-morning)
 
 </div>
 
